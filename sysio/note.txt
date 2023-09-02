@@ -1,0 +1,19 @@
+
+
+r  -> O_RDONLY
+r+ -> O_RDWR
+w  -> O_WRONLY
+w+ -> RDWR|O_TRUNC|O_CREAT
+
+
+文件io操作相关函数：open(), close(), read(), write(), lseek();
+open() 函数通过变参函数实现，可以传2个或是3个参数
+
+文件io与标准io的区别
+文件io的响应速度快
+标准io的吞吐量大
+
+
+
+
+
