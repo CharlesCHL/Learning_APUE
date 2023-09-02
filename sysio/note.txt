@@ -12,6 +12,38 @@ open() 函数通过变参函数实现，可以传2个或是3个参数
 文件io与标准io的区别
 文件io的响应速度快
 标准io的吞吐量大
+应当多用标准io
+
+标准io与文件io不可混用
+fileno()可以实现两者之间的转换
+fdopen()也可以实现相似功能
+
+
+io的效率问题
+习题：
+	测试bufsize对于io效率的影响，注意性能最佳拐点出现时的bufsize值，以及何时会出现段错误
+
+
+文件共享：多个任务共同操作一个文件或者协同完成任务
+问题：写程序删除一个文件的第十行
+思路
+ 1. 
+ open r  -> fd1 --> lseek pos1 line11 
+ 2. 
+ open r+ -> fd2 --> lseek pos2 line10
+ 3.
+ while()
+ {
+	 read(fd1);
+	 write(fd2);
+ }
+ 4.此时在pos1到pos2之间还有一段文件，truncate
+
+
+
+
+
+
 
 
 
