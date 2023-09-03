@@ -40,12 +40,22 @@ io的效率问题
  4.此时在pos1到pos2之间还有一段文件，truncate
 
 
+原子操作的作用：解决竞争和冲突
+如tmpnam, tmpfile函数
+在多进程或者多线程并法时其作用
 
 
 
+程序中的重定向：dup, dup2
 
 
+同步：sync, fsync, fdatasync
 
+fcntl():文件描述符所操作都与其相关
+
+ioctl():设备相关的操作都与其相关
+
+/dev/fd/目录：虚目录，显示当前进程的文件描述符信息
 
 
 
