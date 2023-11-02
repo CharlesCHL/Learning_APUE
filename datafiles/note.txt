@@ -1,0 +1,13 @@
+
+
+二、系统数据文件和信息
+
+1. /etc/passwd
+2. /etc/group
+3. /etc/shadow
+4. 时间戳
+5. 
+
+
+
+
