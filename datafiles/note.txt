@@ -3,7 +3,13 @@
 二、系统数据文件和信息
 
 1. /etc/passwd
+    最好不要直接打开使用，各个系统的实现不同，可以使用下面两个函数来实现
+    getpwuid();     struct passwd 结构体
+    getpwnam();
 2. /etc/group
+    同上，最好不要直接打开使用
+    getgrgid();     struct group 结构体
+    getgrnam();
 3. /etc/shadow
 4. 时间戳
 5. 
