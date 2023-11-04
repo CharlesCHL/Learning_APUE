@@ -14,7 +14,21 @@
     getspnam();     struct spwd 结构体
     crypt();        字符串加密
 4. 时间戳
-5. 
+    time(); 有两种接收返回值的方法，可以在传参时传入指针，也可直接接受
+        time_t stamp;
+        
+        1. stamp = time(NULL);
+        2. time(&stamp);
+    gmtime();
+    localtime();
+        struct tm *tm;
+        
+        tm = localtime(&stamp);
+    mktime();
+        调整tm结构体的数值，具体作用见 100days.c
+    strftime();
+        strftime(buf, BUFSIZE, "%Y-%m-%d", tm);
+        puts(buf);
 
 
 
