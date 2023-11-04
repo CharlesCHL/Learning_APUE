@@ -11,6 +11,8 @@
     getgrgid();     struct group 结构体
     getgrnam();
 3. /etc/shadow
+    getspnam();     struct spwd 结构体
+    crypt();        字符串加密
 4. 时间戳
 5. 
 
