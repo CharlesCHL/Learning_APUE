@@ -29,7 +29,36 @@
     setenv();
     putenv();
 5. C程序的存储空间布局
+    pmap()
 6. 库
+    静态库
+
+        libxx.a
+        xx为库名
+
+        ar -cr libxx.a yyy.o
+
+        发布到
+        /usr/local/include/     头文件
+        /usr/local/lib/         libxx.a文件
+    
+    动态库
+
+        libxx.so
+
+        gcc -shared -fpic -o libxx.so yyy.c
+
+        发布到
+        /usr/local/include/	头文件
+        /usr/local/lib/		libxx.so文件
+
+        添加路径
+        /etc/ld.so.conf
+
+        重读路径
+        /sbin/ldconfig
+
+
 7. 函数跳转
 8. 资源的获取及控制
 
