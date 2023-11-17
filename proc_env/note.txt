@@ -58,8 +58,17 @@
         重读路径
         /sbin/ldconfig
 
+    共享库/手工装载库
+        dlopen();
+        dlclose();
+        dlerror();
+        dlsym();
+    
 
 7. 函数跳转
+    setjmp();
+    longjmp();
+
 8. 资源的获取及控制
 
 
