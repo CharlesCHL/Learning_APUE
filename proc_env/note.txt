@@ -70,7 +70,8 @@
     longjmp();
 
 8. 资源的获取及控制
-
+    getrlimit();
+    setrlimit();
 
 
 
