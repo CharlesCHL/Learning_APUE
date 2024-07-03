@@ -1,6 +1,5 @@
 
-Advanced Programming in the UNIX
-
+Advanced Programming in the UNIX Environment
 1. UNIX System Overview
 2. UNIX Standardization and Implementations
 3. File I/O
